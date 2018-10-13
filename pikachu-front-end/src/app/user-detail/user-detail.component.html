@@ -1,0 +1,11 @@
+<div *ngIf="user" class="user-detail-content">
+  <label>ID: {{user.id}}</label>
+  <br>
+  <label>User Name: {{user.userName | uppercase}}</label>
+  <div>
+      <label>User Name:
+        <input [(ngModel)]="user.userName" placeholder="username"/>
+      </label>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
